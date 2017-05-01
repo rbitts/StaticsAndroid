@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/statics_card_view_holder_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/statics_card_view_holder_padding">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="0dp"
+        >
+
+        <FrameLayout
+            android:id="@+id/statics_default_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layoutDirection="ltr">
+
+                <android.support.percent.PercentFrameLayout
+                    android:id="@+id/statics_portrait_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/statics_portrait"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        app:layout_heightPercent="50%"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/card_view_gradient"
+                        />
+                </android.support.percent.PercentFrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/statics_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/span_primary"
+                                android:textSize="@dimen/profile_place_holder_id_text_size"
+                                android:textStyle="bold"
+                                android:text="부모#31350"
+                                />
+
+                            <TextView
+                                android:id="@+id/statics_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/span_secondary"
+                                android:textSize="@dimen/profile_place_holder_won_games_text_size"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- refresh time -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="right|bottom"
+                        android:background="@color/label_info"
+                        >
+
+                        <TextView
+                            android:id="@+id/statics_refresh_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/label"
+                            android:textSize="@dimen/profile_place_holder_timestamp_text"
+                            />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <!-- avatar -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/statics_avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="40dp"
+                android:layout_gravity="center_horizontal|bottom"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#EAEAEA"/>
+            <!-- end of avatar -->
+
+            <!-- level container -->
+            <FrameLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="60dp"
+                android:layout_gravity="left|bottom">
+
+                <ImageView
+                    android:id="@+id/statics_level_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/statics_level_star"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom"
+                    />
+                <TextView
+                    android:id="@+id/statics_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/label"
+                    android:textSize="@dimen/statics_card_view_holder_level_text"
+                    android:textStyle="bold"
+                    />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="60dp"
+                android:layout_gravity="right|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/statics_rank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/label"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/statics_card_view_holder_level_text"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/statics_rank_picture"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    />
+
+            </LinearLayout>
+            <!-- end of level container -->
+
+            <com.sec.widget.LabelView.LabelTextView
+                android:id="@+id/statics_role_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/label"
+                android:background="@drawable/statics_role_border"
+                android:layout_marginRight="@dimen/statics_card_view_holder_role_border_size_inverse"
+                android:layout_marginLeft="@dimen/statics_card_view_holder_role_border_size_inverse"
+
+
+                app:label_backgroundColor="@color/statics_role_background_color"
+                app:label_height="40dp"
+                app:label_distance="25dp"
+                app:label_orientation="RIGHT_TOP"
+                app:label_text="팀장"
+                app:label_textSize="@dimen/statics_card_view_holder_role_text"
+                />
+        </FrameLayout>
+        <!-- end of default container -->
+
+        <!--  hover container -->
+        <FrameLayout
+            android:id="@+id/statics_hover_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99000000">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <com.sec.widget.ShineButton.ShineButton
+                    android:id="@+id/statics_favorite"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    app:btn_color="@android:color/darker_gray"
+                    app:btn_fill_color="@color/colorAccent"
+                    app:enable_flashing="true"
+                    app:shine_size="40dp"
+                    app:siShape="@raw/star"/>
+
+                <TextView
+                    android:id="@+id/statics_user_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/fa_search"
+                    android:textColor="@color/label"
+                    android:textSize="@dimen/profile_activity_header_text"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/static_user_toast_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/label"
+                android:textSize="@dimen/statics_card_view_holder_toast_text"
+                android:layout_gravity="bottom|center_horizontal"
+                />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_1px" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+</FrameLayout>

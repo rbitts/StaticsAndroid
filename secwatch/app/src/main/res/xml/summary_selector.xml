@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<swipeitems>
+
+    <item
+        value="@string/summary_competitive_value"
+        title="경쟁전" />
+    <item
+        value="@string/summary_quickplay_value"
+        title="빠른 대전" />
+
+        <!--description="빠른대전" />-->
+</swipeitems>

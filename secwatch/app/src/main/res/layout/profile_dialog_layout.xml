@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pinview="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="@dimen/profile_dialog_width"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/profile_dialog_content_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/span_primary"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/profile_dialog_description_text"/>
+
+    <FrameLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.sec.widget.pinview.PinView
+            android:id="@+id/profile_dialog_pin_view"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            pinview:password="true"
+            pinview:split=""
+            pinview:numberCharacters="1"
+            pinview:deleteOnClick="false"
+            pinview:keyboardMandatory="false"
+            pinview:nativePinBox="false"
+            pinview:colorSplit="@android:color/darker_gray"
+            pinview:colorTextPinBox="@android:color/black"
+            pinview:colorTextTitles="@color/span_secondary"
+            pinview:titles="@array/small_titles"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

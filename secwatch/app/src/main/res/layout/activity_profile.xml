@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:pinview="http://schemas.android.com/tools"
+    android:id="@+id/profile_container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_activity_header_height"
+        android:background="@drawable/side_nav_bar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_gravity="left|bottom"
+            android:textSize="@dimen/profile_activity_header_text"
+            android:textColor="@android:color/background_light"
+            android:text="@string/profile_activity_header_text"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_activity_input_text_descript"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                >
+
+                <EditText
+                    android:id="@+id/profile_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="@string/profile_activity_input_text_hint" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                >
+
+                <com.sec.secwatch.widgets.UserProfilePlaceHolder
+                    android:id="@+id/profile_place_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_place_holder_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border_1px"
+                    />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                >
+
+                <Button style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:id="@+id/profile_activity_search_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/profile_activity_button_height"
+                    android:text="조회"
+                    />
+                <Button style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:id="@+id/profile_activity_cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/profile_activity_button_height"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="취소"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_marginBottom="5dp">
+
+    <com.sec.widget.RoundCornerProgressBar.IconRoundCornerProgressBar
+        android:id="@+id/user_view_list_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:rcBackgroundColor="@color/user_view_progress_bar_background"
+        app:rcBackgroundPadding="4dp"
+        app:rcIconBackgroundColor="@color/user_view_progress_bar_icon_background"
+        app:rcIconPadding="3dp"
+        app:rcIconSize="40dp"
+        app:rcMax="150"
+        app:rcProgress="90"
+        app:rcProgressColor="@color/user_view_progress_bar_progress_color"
+        app:rcSecondaryProgressColor="@color/user_view_progress_bar_second_progress_color"
+        app:rcRadius="5dp" />
+
+    <TextView
+        android:id="@+id/user_view_time_played_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_gravity="right|center_vertical"
+        android:textSize="@dimen/user_view_time_played_text_size"
+        android:textColor="@color/label"
+        />
+
+    <TextView
+        android:id="@+id/user_view_hero_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_gravity="left|center_vertical"
+        android:textSize="@dimen/user_view_time_played_text_size"
+        android:textColor="@color/label"
+        />
+
+</FrameLayout>

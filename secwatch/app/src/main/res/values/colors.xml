@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#27a9e3</color>
+    <color name="colorPrimaryDark">#2295c9</color>
+    <color name="colorAccent">#ffb848</color>
+
+    <color name="label">#ffffff</color>
+    <color name="label_disable">#8e8e8e</color>
+
+    <color name="common_divider_color">#cecece</color>
+
+    <color name="tab_strip_background">#eaeaea</color>
+
+    <color name="span_primary">#000000</color>
+    <color name="span_secondary">#9e9e9e</color>
+    <color name="label_info">#27a9e3</color>
+    <color name="label_inverse">#333333</color>
+    <color name="profile_place_holder_border">#eaeaea</color>
+    <color name="card_view_place_holder_image_background">#2295c9</color>
+
+
+    <color name="dark_theme_background">#ff252e39</color>
+    <color name="dark_theme_point_background">#182128</color>
+    <color name="dark_theme_accent_background">#3cdedd</color>
+
+    <color name="favorite_active_color">#ffb848</color>
+
+    <color name="statics_role_background_color">#da9628</color>
+
+    <color name="user_view_progress_bar_background">#ffeaeaea</color>
+    <color name="user_view_progress_bar_icon_background">#ff0099cc</color>
+    <color name="user_view_progress_bar_progress_color">#ff33b5e5</color>
+    <color name="user_view_progress_bar_second_progress_color">#2a33b5e5</color>
+
+    <!--2295c9-->
+    <!--.bg_lg{ background:#28b779;}-->
+    <!--.bg_dg{ background:#28b779;}-->
+    <!--.bg_ly{ background:#ffb848;}-->
+    <!--.bg_dy{ background:#da9628;}-->
+    <!--.bg_ls{ background:#2255a4;}-->
+    <!--.bg_lo{ background:#da542e;}-->
+    <!--.bg_lr{ background:#f74d4d;}-->
+    <!--.bg_lv{ background:#603bbc;}-->
+    <!--.bg_lh{ background:#b6b3b3;}-->
+
+</resources>

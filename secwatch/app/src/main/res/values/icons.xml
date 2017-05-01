@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa_icon_areachart">&#xf1fe;</string>
+    <string name="fa_icon_piechart">&#xf200;</string>
+    <string name="fa_icon_linechart">&#xf201;</string>
+
+    <string name="fa_icon_setting">&#xf013;</string>
+
+    <string name="fa_icon_clock">&#xf017;</string>
+
+    <string name="fa_heart_o">&#xf08a;</string>
+
+    <string name="fa_search">&#xf002;</string>
+
+    <string name="fa_star_o">&#xf006;</string>
+
+    <string name="fa_star">&#xf005;</string>
+
+    <string name="fa_arrow_circle_down">&#xf0ab;</string>
+
+    <string name="fa_chevron_circle_down">&#xf13a;</string>
+
+    <string name="fa_chevron_circle_up">&#xf139;</string>
+
+    <string name="fa_bullhorn">&#xf0a1;</string>
+
+    <string name="fa_info_circle">&#xf05a;</string>
+
+</resources>

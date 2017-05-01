@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PinView">
+        <attr name="numberPinBoxes"     format="integer"/>
+        <attr name="password"           format="boolean"/>
+        <attr name="numberCharacters"   format="integer"/>
+        <attr name="titles"             format="reference"/>
+        <attr name="split"              format="string"/>
+        <attr name="deleteOnClick"      format="boolean"/>
+        <attr name="keyboardMandatory"  format="boolean"/>
+        <attr name="nativePinBox"       format="boolean"/>
+        <attr name="drawablePinBox"     format="reference"/>
+        <attr name="colorTextPinBox"    format="color"/>
+        <attr name="colorTextTitles"    format="color"/>
+        <attr name="colorSplit"         format="color"/>
+        <attr name="textSizePinBox"     format="dimension"/>
+        <attr name="textSizeTitles"     format="dimension"/>
+        <attr name="sizeSplit"          format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="core_area">
+        <attr name="underline_color"
+            format="color"/>
+        <attr name="underline_selected_color"
+            format="color"/>
+        <attr name="hint_color"
+            format="color"/>
+        <attr name="text_color"
+            format="color"/>
+        <attr name="hint_text"
+            format="string"/>
+        <attr name="codes"
+            format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="LabelView">
+        <attr name="label_distance" format="dimension" />
+        <attr name="label_height" format="dimension"/>
+        <attr name="label_strokeWidth" format="dimension"/>
+        <attr name="label_backgroundColor" format="color"/>
+        <attr name="label_strokeColor" format="color"/>
+        <attr name="label_text" format="string"/>
+        <attr name="label_textSize" format="dimension" />
+        <attr name="label_textStyle" format="enum" >
+            <enum name="NORMAL" value="0"/>
+            <enum name="BOLD" value="1"/>
+            <enum name="ITALIC" value="2"/>
+            <enum name="BOLD_ITALIC" value="3"/>
+        </attr>
+        <attr name="label_textColor" format="color"/>
+        <attr name="label_visual" format="boolean"/>
+        <attr name="label_orientation" format="enum">
+            <enum name="LEFT_TOP" value="1"/>
+            <enum name="RIGHT_TOP" value="2"/>
+            <enum name="LEFT_BOTTOM" value="3"/>
+            <enum name="RIGHT_BOTTOM" value="4"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundCornerProgress">
+        <attr name="rcReverse" format="boolean" />
+        <attr name="rcProgress" format="float" />
+        <attr name="rcMax" format="float" />
+        <attr name="rcSecondaryProgress" format="float" />
+        <attr name="rcBackgroundPadding" format="dimension" />
+        <attr name="rcRadius" format="dimension" />
+        <attr name="rcProgressColor" format="color" />
+        <attr name="rcSecondaryProgressColor" format="color" />
+        <attr name="rcBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="IconRoundCornerProgress">
+        <attr name="rcIconSrc" format="integer" />
+        <attr name="rcIconSize" format="dimension" />
+        <attr name="rcIconWidth" format="dimension" />
+        <attr name="rcIconHeight" format="dimension" />
+        <attr name="rcIconPadding" format="dimension" />
+        <attr name="rcIconPaddingLeft" format="dimension" />
+        <attr name="rcIconPaddingRight" format="dimension" />
+        <attr name="rcIconPaddingTop" format="dimension" />
+        <attr name="rcIconPaddingBottom" format="dimension" />
+        <attr name="rcIconBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TextRoundCornerProgress">
+        <attr name="rcTextProgressColor" format="color" />
+        <attr name="rcTextProgressSize" format="dimension" />
+        <attr name="rcTextProgressMargin" format="dimension" />
+        <attr name="rcTextProgress" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="NavigationTabStrip">
+        <attr name="nts_color" format="color"/>
+        <attr name="nts_size" format="dimension"/>
+        <attr name="nts_weight" format="dimension"/>
+        <attr name="nts_factor" format="float"/>
+        <attr name="nts_titles" format="reference"/>
+
+        <attr name="nts_type" format="enum">
+            <enum name="line" value="0"/>
+            <enum name="point" value="1"/>
+        </attr>
+        <attr name="nts_gravity" format="enum">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+        </attr>
+
+        <attr name="nts_typeface" format="string"/>
+        <attr name="nts_corners_radius" format="dimension"/>
+        <attr name="nts_animation_duration" format="integer"/>
+
+        <attr name="nts_inactive_color" format="color"/>
+        <attr name="nts_active_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RotateLoading">
+        <attr name="loading_width" format="dimension"/>
+        <attr name="loading_color" format="color"/>
+        <attr name="shadow_position" format="integer"/>
+        <attr name="loading_speed" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CradleBall">
+        <attr name="cradle_ball_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ChartAttrs">
+
+        <attr name="chart_axis" format="boolean"/>
+        <attr name="chart_axisThickness" format="dimension"/>
+        <attr name="chart_axisColor" format="reference|color"/>
+        <attr name="chart_axisBorderSpacing" format="dimension"/>
+        <attr name="chart_axisTopSpacing" format="dimension"/>
+
+        <attr name="chart_axisLabelsSpacing" format="dimension"/>
+
+        <attr name="chart_labels" format="enum">
+            <enum name="outside" value="0"/>
+            <enum name="inside" value="1"/>
+            <enum name="none" value="2"/>
+        </attr>
+
+        <attr name="chart_labelColor" format="reference|color"/>
+        <attr name="chart_fontSize" format="dimension"/>
+        <attr name="chart_typeface" format="string"/>
+
+        <attr name="chart_shadowColor" format="reference|color"/>
+        <attr name="chart_shadowDx" format="dimension"/>
+        <attr name="chart_shadowDy" format="dimension"/>
+        <attr name="chart_shadowRadius" format="dimension"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="BarChartAttrs">
+        <attr name="chart_barSpacing" format="dimension"/>
+        <attr name="chart_setSpacing" format="dimension"/>
+        <attr name="chart_cornerRadius" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="SwipeSelector">
+        <attr name="swipe_itemsXmlResource" format="reference" />
+        <attr name="swipe_unselectedItemTitle" format="string" />
+        <attr name="swipe_unselectedItemDescription" format="string" />
+        <attr name="swipe_indicatorSize" format="dimension" />
+        <attr name="swipe_indicatorMargin" format="dimension" />
+        <attr name="swipe_indicatorActiveColor" format="color" />
+        <attr name="swipe_indicatorInActiveColor" format="color" />
+        <attr name="swipe_leftButtonResource" format="reference" />
+        <attr name="swipe_rightButtonResource" format="reference" />
+        <attr name="swipe_customFontPath" format="string" />
+        <attr name="swipe_titleTextAppearance" format="reference" />
+        <attr name="swipe_descriptionTextAppearance" format="reference" />
+
+        <attr name="swipe_descriptionGravity" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1" />
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ShineButton">
+        <attr name="btn_color" format="color" />
+        <attr name="btn_fill_color" format="color" />
+        <attr name="shine_count" format="integer" />
+        <attr name="shine_turn_angle" format="float" />
+        <attr name="small_shine_offset_angle" format="float" />
+        <attr name="enable_flashing" format="boolean" />
+        <attr name="allow_random_color" format="boolean" />
+        <attr name="small_shine_color" format="color" />
+        <attr name="big_shine_color" format="color" />
+        <attr name="shine_animation_duration" format="integer" />
+        <attr name="click_animation_duration" format="integer" />
+        <attr name="shine_distance_multiple" format="float" />
+        <attr name="shine_size" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="PorterImageView">
+        <attr name="siShape" format="integer|reference" />
+    </declare-styleable>
+
+</resources>
